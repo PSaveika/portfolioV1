@@ -15,8 +15,6 @@ html, body {
 body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
     margin: 0 auto;
     padding: 0 40px;
 }
@@ -43,3 +41,5 @@ img, picture, video, canvas, svg {
 input, button, textarea, select {
     font: inherit;
 }
+
+  
