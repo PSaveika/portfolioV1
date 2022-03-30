@@ -682,7 +682,7 @@ body {
 }
 
 .about-me-doing-inner {
-    background: rgb(27, 27, 27);
+    background: #171717;
     transition: all 0.15s ease-out;
     border-bottom: 2px solid transparent;
     border-radius: 5px;
@@ -795,6 +795,14 @@ body {
 /* Tablet and Under */
 @media(max-width: 768px) {
     
+    .about-body {
+        padding: 0;
+    }
+
+    .about-content {
+        padding: 0 20px;
+    }
+
     .about-me-doing {
         grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
     }
@@ -847,6 +855,7 @@ body {
 
 
 /* Contacts */
+
 .contact-heading {
     text-align: center;
     letter-spacing: 0.8px;
@@ -858,7 +867,188 @@ body {
     color: var(--text-color-shade);
 }
 
-.contact-title {
-    font-size: 40px;
-    font-weight: 700;
+.contacts-title {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.contacts-flex {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+.contacts-grid,
+.contacts-info-grid {
+    width: 40%;
+    margin: 0 15px;
+    
+}
+
+.contacts-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    
+}
+.contacts-content {
+    grid-column: 1 / 2;
+}
+.contacts-title {
+    margin-bottom: 30px;
+}
+.contacts-form-group {
+    margin-bottom: 25px;
+}
+.contacts-form-group:nth-child(-n+2) {
+    display: inline-block;
+    width: 48%;
+}
+.contacts-form-group:first-child {
+    float: left;
+}
+.contacts-form-group:nth-child(2) {
+    float: right;
+}
+.contacts-form-group-input {
+    outline: none;
+    width: 100%;
+    color: var(--text-color-shade);
+    background-color: #202020;
+    border: none;
+    border-bottom: 2px solid #282828;
+    font-size: 15px;
+    height: 40px;
+    padding: 9px 14px;
+    transition: border 0.15s ease-out;
+}
+.contacts-form-group-input:focus {
+    border-bottom: 2px solid var(--primary-color);
+    transition: border 0.15s ease-in;
+}
+.contacts-form-group-input-msg {
+    height: auto;
+}
+.form-button {
+    padding: 10px 60px;
+    border-radius: 75px;
+    color: var(--text-color);
+    transform: translate(0);
+    width: 160px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    transition: all .4s ease-in-out;
+    background-image: linear-gradient(to right, var(--primary-color), var(--primary-color-shade), var(--primary-color), var(--primary-color-shade));
+      box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+}
+
+.form-button:hover {
+    background-position: 100% 0;
+    transition: all .4s ease-in-out;
+}
+.form-button:focus {
+    outline: none;
+}
+
+.contacts-info-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.contacts-info {
+    grid-column: 1 / 2;
+}
+
+.contacts-info-title {
+    font-size: 24px;
+    font-weight: 600;
+}
+.contacts-info-description {
+    color: var(--text-color-shade);
+    text-align: justify;
+    width: 45%;
+    font-weight: 400;
+    margin-bottom: 35px;
+}
+
+.contacts-info-list-media {
+    display: flex;
+}
+
+.contacts-info-list-icon {
+    font-size: 32px;
+    color: #df861d;
+    display: inline;
+    width: 35px;
+    height: 75px;
+    margin-right: 25px;
+}
+.contacts-info-list-details {
+    border-left: 3px solid #282828;
+    padding-left: 25px;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.contacts-info-list-type {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-color);
+}
+.contacts-info-list-value {
+    color: var(--text-color-shade);
+    margin-top: -5px;
+}
+.contacts-info-list-mail {
+    color: var(--text-color-shade);
+    transition: color 0.15s ease-out;
+}
+.contacts-info-list-mail:hover {
+    transition: color 0.15s ease-in;
+    color: #454545;
+}
+
+/* Tablet and Under */
+@media(max-width: 768px) {
+    
+    .contacts-body {
+        padding: 0;
+    }
+    
+    .contact-heading {
+        padding-top: 70px;
+        text-align: center;
+        letter-spacing: 0.8px;
+    }
+    
+    .contacts-flex {
+        padding: 0 10px;
+        margin: 0;
+    }
+    .contacts-grid,
+    .contacts-info-grid {
+        width: 95%;
+        margin: 0 10px;
+        
+    }
+    
+    .contacts-form-group:nth-child(-n+2) {
+        display: inline-block;
+        width: 100%;
+    }
+    
+
+    .contacts-info-grid {
+        padding-bottom: 70px;
+    }
+    .contacts-info-title {
+        padding-top: 30px;
+    }
+    .contacts-info-description {
+        width: 100%;
+    }
+    
+    
 }
