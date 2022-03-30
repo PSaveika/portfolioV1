@@ -818,7 +818,7 @@ body {
 
     .about-content {
         display: grid;
-        grid-template-columns: 350px;
+        grid-template-columns: 300px;
         grid-template-rows: repeat(5, auto);
     }
     
@@ -839,6 +839,13 @@ body {
         font-size: 24px;
         padding: 0 5px;
     }
+    .about-me-cv-button {
+        width: 135px;
+        font-size: 14px;
+    }
+    .about-me-info-links-line {
+        width: 20px;
+    }
     
     .about-me-doing {
         grid-column: 1 / 2;
@@ -848,7 +855,7 @@ body {
     
     .about-me-doing-box  {
         height: 320px;
-        width: 340px;  
+        width: 300px;  
     }
     
 }
@@ -1019,7 +1026,7 @@ body {
         padding: 0;
     }
     
-    .contact-heading {
+    .contacts-heading {
         padding-top: 70px;
         text-align: center;
         letter-spacing: 0.8px;
@@ -1284,7 +1291,7 @@ body {
 
     .education-content,
     .experience-content {
-        height: 180px;
+        height: 220px;
     }
 
     .skill-block {
@@ -1309,11 +1316,14 @@ body {
     .skills-heading {
         padding-top: 80px;
     }
+    .skills-description {
+        font-size: 14px;
+    }
 
     .education-grid,
     .experience-grid {
         width: 100%;
-        margin: 0 25px;
+        margin: 0 5px;
     }
     .education-grid {
         padding-bottom: 70px;
@@ -1325,7 +1335,19 @@ body {
 
     .education-content,
     .experience-content {
-        height: 250px;
+        height: 260px;
+    }
+    .education-content-title,
+    .experience-content-title {
+        font-size: 16px;
+    }
+    .education-content-details,
+    .experience-content-details {
+        font-size: 15px;
+    }
+    .education-content-description,
+    .experience-content-description {
+        font-size: 14px;
     }
 
     .skill-block {
@@ -1340,5 +1362,45 @@ body {
         width: 100%;
         margin: 0 25px;
     }
+    
+}
+
+/* PORTFOLIO */
+
+.portfolio-heading {
+    text-align: center;
+    letter-spacing: 0.8px;
+}
+
+.portfolio-description {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-color-shade);
+}
+
+.portfolio-title {
+    font-size: 40px;
+    font-weight: 700;
+}
+.coming-soon {
+    text-align: center;
+    padding-top: 200px;
+}
+.coming-soon-text {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+/* Tablet and Under */
+@media(max-width: 768px) {
+    
+    .portfolio-body {
+        padding: 0;
+    }
+
+    .portfolio-heading {
+        padding-top: 80px;
+    }
+
     
 }
